@@ -8,7 +8,7 @@ Polygons in this archive have following properties:
 
 - With or without holes
 - Non-degenerate (no self-intersection, )
-- Convex
+- Concave
 - Relatively small amount of vertices
 - Hand-traced from various papers on computational geometry algorithms, as well as from other sources (see below).
 
