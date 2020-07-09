@@ -2,6 +2,8 @@
 
 *Collection of polygon data in various formats for testing computational geometry algorithms.*
 
+Supported by the [Frank-Ratchye Studio for Creative Inquiry](http://studioforcreativeinquiry.org) at Carnegie Mellon University.
+
 Polygons in this archive have following properties:
 
 - With or without holes
@@ -9,6 +11,7 @@ Polygons in this archive have following properties:
 - Convex
 - Relatively small amount of vertices
 - Hand-traced from various papers on computational geometry algorithms, as well as from other sources (see below).
+
 
 ## Formats
 
@@ -52,3 +55,6 @@ Following renderings are triangulated (and holes bridged) for easier viewing. Th
 | `seidel-*` | [Seidel, R., "A simple and fast incremental randomized algorithm for computing trapezoidal decompositions and for triangulating polygons"](https://www.cs.princeton.edu/courses/archive/fall05/cos528/handouts/A%20Simple%20and%20fast.pdf) | |
 | `skimage-*` | [scikit-image: Image processing in Python](https://scikit-image.org/docs/stable/api/skimage.data.html) | |
 | `toussaint-*` | [Toussaint, G. T., "Efficient triangulation of simple polygons"](http://asignatura.us.es/fgcitig/Articulos/14-Efficient%20Triangulation%20of%20Simple%20Polygons.pdf) | |
+
+
+**Supported by the [Frank-Ratchye Studio for Creative Inquiry](http://studioforcreativeinquiry.org) at Carnegie Mellon University.** 
