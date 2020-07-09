@@ -1,6 +1,4 @@
-
 const { exec } = require('child_process');
-try{exec('cp ../../triangulateMTX/triangulateMTX.js triangulateMTX.js')}catch(e){}
 
 const fs = require('fs');
 const {triangulate,bridge,visualizeSVG,makeCW,makeCCW} = require("./triangulateMTX.js");

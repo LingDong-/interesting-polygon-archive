@@ -1,0 +1,45 @@
+ply
+format ascii 1.0
+element vertex 17
+property float x
+property float y
+property float z
+element edge 17
+property int vertex1
+property int vertex2
+end_header
+69 198 0
+231 301 0
+377 363 0
+539 303 0
+506 369 0
+601 325 0
+417 492 0
+653 317 0
+474 246 0
+397 196 0
+734 273 0
+738 638 0
+265 640 0
+654 590 0
+577 446 0
+465 561 0
+379 489 0
+
+0 1
+1 2
+2 3
+3 4
+4 5
+5 6
+6 7
+7 8
+8 9
+9 10
+10 11
+11 12
+12 13
+13 14
+14 15
+15 16
+16 0

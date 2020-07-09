@@ -7,7 +7,7 @@ Supported by the [Frank-Ratchye Studio for Creative Inquiry](http://studioforcre
 Polygons in this archive have following properties:
 
 - With or without holes
-- Non-degenerate (no self-intersection, )
+- Non-degenerate (no self-intersection/overlaps, no zero-area parts)
 - Concave
 - Relatively small amount of vertices
 - Hand-traced from various papers on computational geometry algorithms, as well as from other sources (see below).
@@ -22,7 +22,8 @@ The first contour is the outer contour, and the rest (if any) are holes.
 - [JSON](json), 3D Array storing contours > vertices > x,y coordinates.
 - [CSV](csv), Each line is a contour, with flattened x,y coordinates separated by commas, e.g. `x0,y0,x1,y1,x2,y2,...`
 - [SVG](svg), Single `<path>` tag encoding the outer contour and all holes. No styling or other redundency applied.
-- [PNG](png), rasterized binary images (white foreground, black background) in png format.
+- [PNG](png), Rasterized binary images (white foreground, black background) in png format.
+- [PLY](ply), Since `face` elements requires triangulation in most softwares, the polygons are stored as `edge`'s connecting adjacent vertices. `z` of vertices are always `0`. `y` axis might look inverted in 3D softwares.
 - [Hardcode](hardcode), For programming languages/environments where parsing any of the above is inconvenient, hardcoded variables are available for copy-pasting into source code.
 
 
@@ -39,6 +40,31 @@ Following renderings are triangulated (and holes bridged) for easier viewing. Th
 | ![](render/matisse-nuit.svg) matisse-nuit.json | ![](render/mei-2.svg) mei-2.json | ![](render/mei-3.svg) mei-3.json | ![](render/mei-4.svg) mei-4.json |
 | ![](render/mei-5.svg) mei-5.json | ![](render/mei-6.svg) mei-6.json | ![](render/meisters-3.svg) meisters-3.json | ![](render/misc-discobolus.svg) misc-discobolus.json |
 | ![](render/misc-fu.svg) misc-fu.json | ![](render/seidel-3.svg) seidel-3.json | ![](render/skimage-horse.svg) skimage-horse.json | ![](render/toussaint-1a.svg) toussaint-1a.json |
+ 
+ 
+## Metadata 
+
+Basic info about each polygon are stored separately in the `meta` folder as JSON's. Metadata for a polygon looks something like this (re-formatted and commented for explanation):
+
+```javascript
+{// meta/skimage-horse.json
+
+  "centroid": [371.77, 390.94], // true polygon centroid (aka center of mass)
+  "area":     180144,               // area of polygon
+  "bounds":   [24,111,784,732],   // left,top,right,bottom
+
+  // minimum bounding boxes and rectangles
+  "rotatedBoundingBox": {"center": [422.99, 480.58], "size": [809.30, 563.60], "angle": -15.34},
+  "boundingCircle":     {"center": [408,416.5],"radius": 435.96},
+
+  // convex hull encoded with vertex indices of the outermost contour
+  "hull": [1,3,7,27,28,72,73,75,97,100,101,102,105,106,107] 
+}
+``` 
+Visualization of the metadata are stored in the `meta/render` folder. For example:
+
+![](meta/render/skimage-horse.svg)
+
  
 ## Sources
 
