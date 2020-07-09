@@ -53,7 +53,7 @@ Basic info about each polygon are stored separately in the `meta` folder as JSON
   "area":     180144,           // area of polygon
   "bounds":   [24,111,784,732], // left,top,right,bottom
 
-  // minimum bounding boxes and rectangles
+  // minimum bounding box and circle
   "rotatedBoundingBox":{"center": [422.99, 480.58], "size": [809.30, 563.60], "angle":-15.34},
   "boundingCircle":    {"center": [408,416.5],"radius": 435.96},
 
