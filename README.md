@@ -50,12 +50,12 @@ Basic info about each polygon are stored separately in the `meta` folder as JSON
 {// meta/skimage-horse.json
 
   "centroid": [371.77, 390.94], // true polygon centroid (aka center of mass)
-  "area":     180144,               // area of polygon
-  "bounds":   [24,111,784,732],   // left,top,right,bottom
+  "area":     180144,           // area of polygon
+  "bounds":   [24,111,784,732], // left,top,right,bottom
 
   // minimum bounding boxes and rectangles
-  "rotatedBoundingBox": {"center": [422.99, 480.58], "size": [809.30, 563.60], "angle": -15.34},
-  "boundingCircle":     {"center": [408,416.5],"radius": 435.96},
+  "rotatedBoundingBox":{"center": [422.99, 480.58], "size": [809.30, 563.60], "angle":-15.34},
+  "boundingCircle":    {"center": [408,416.5],"radius": 435.96},
 
   // convex hull encoded with vertex indices of the outermost contour
   "hull": [1,3,7,27,28,72,73,75,97,100,101,102,105,106,107] 
