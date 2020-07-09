@@ -40,7 +40,7 @@ Following renderings are triangulated (and holes bridged) for easier viewing. Th
 ## Sources
 
 | File prefix | Source | Note |
-|---|---|---|---|
+|---|---|---|
 | `eberly-*` | [David Eberly, "Triangulation by Ear Clipping"](https://www.geometrictools.com/Documentation/TriangulationByEarClipping.pdf) | |
 | `elgindy-*` | [ElGindy, H., Everett, H., & Toussaint, G., "Slicing an ear using prune-and-search"](https://www.sciencedirect.com/science/article/pii/016786559390141Y) | |
 | `gray-*` | [Theodore Gray, "Embroidered Animation! Finally!"](http://home.theodoregray.com/stitchblog/2015/7/10/embroidered-animation-finally) | |
